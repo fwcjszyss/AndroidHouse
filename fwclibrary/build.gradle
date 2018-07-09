@@ -1,0 +1,37 @@
+apply plugin: 'com.android.library'
+group='com.github.fwcjszyss'
+android {
+    compileSdkVersion 26
+
+
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:26.1.0'
+//    implementation 'com.byc:ImageWatcher:1.0.3'
+    //图片选择
+    compile 'com.github.LuckSiege.PictureSelector:picture_library:v2.2.3'
+    //toast
+    compile 'com.github.bboylin:UniversalToast:v1.0.8'
+    //时间 、地址 选择器
+    compile 'com.contrarywind:Android-PickerView:4.1.4'
+}
