@@ -19,6 +19,8 @@ android {
 }
 
 dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:27.1.1'
     implementation 'com.android.support.constraint:constraint-layout:1.1.2'
     compile project(path: ':fwclibrary')
     compile 'com.google.code.gson:gson:2.7'

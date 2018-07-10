@@ -1,13 +1,13 @@
 apply plugin: 'com.android.library'
 group='com.github.fwcjszyss'
 android {
-    compileSdkVersion 26
+    compileSdkVersion 27
 
 
 
     defaultConfig {
         minSdkVersion 19
-        targetSdkVersion 26
+        targetSdkVersion 27
         versionCode 1
         versionName "1.0"
 
@@ -25,9 +25,6 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:26.1.0'
-//    implementation 'com.byc:ImageWatcher:1.0.3'
     //图片选择
     compile 'com.github.LuckSiege.PictureSelector:picture_library:v2.2.3'
     //toast
