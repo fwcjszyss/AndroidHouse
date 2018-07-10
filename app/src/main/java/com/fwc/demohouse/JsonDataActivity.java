@@ -1,18 +1,14 @@
 package com.fwc.demohouse;
 
 import android.annotation.SuppressLint;
-import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import com.bigkoo.pickerview.builder.OptionsPickerBuilder;
 import com.bigkoo.pickerview.listener.OnOptionsSelectListener;
@@ -20,13 +16,10 @@ import com.bigkoo.pickerview.view.OptionsPickerView;
 import com.fwc.library.dialog.bean.JsonBean;
 import com.fwc.library.dialog.utils.GetJsonDataUtil;
 import com.google.gson.Gson;
-import com.luck.picture.lib.PictureSelector;
-import com.luck.picture.lib.entity.LocalMedia;
 
 import org.json.JSONArray;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import xyz.bboylin.universialtoast.UniversalToast;
 
@@ -129,7 +122,7 @@ public class JsonDataActivity extends AppCompatActivity {
                 .setDividerColor(Color.BLACK)
                 .setTextColorCenter(Color.BLACK) //设置选中项文字颜色
                 .setContentTextSize(18)
-                .setSelectOptions(26)
+                .setSelectOptions(26,2,5)
                 .build();
 
 //        pvOptions.setPicker(options1Items);//一级选择器
