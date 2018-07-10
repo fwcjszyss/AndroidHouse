@@ -13,8 +13,8 @@ import android.widget.Button;
 import com.bigkoo.pickerview.builder.OptionsPickerBuilder;
 import com.bigkoo.pickerview.listener.OnOptionsSelectListener;
 import com.bigkoo.pickerview.view.OptionsPickerView;
-import com.fwc.library.dialog.bean.JsonBean;
-import com.fwc.library.dialog.utils.GetJsonDataUtil;
+import com.fwc.library.bean.JsonBean;
+import com.fwc.library.utils.GetJsonDataUtil;
 import com.google.gson.Gson;
 
 import org.json.JSONArray;

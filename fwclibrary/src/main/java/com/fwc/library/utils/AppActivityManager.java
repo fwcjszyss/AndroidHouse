@@ -1,4 +1,4 @@
-package com.fwc.library.dialog.utils;
+package com.fwc.library.utils;
 
 import android.app.Activity;
 import android.content.Context;

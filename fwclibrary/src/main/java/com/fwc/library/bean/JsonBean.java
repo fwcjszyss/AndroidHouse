@@ -1,4 +1,4 @@
-package com.fwc.library.dialog.bean;
+package com.fwc.library.bean;
 
 
 import com.contrarywind.interfaces.IPickerViewData;

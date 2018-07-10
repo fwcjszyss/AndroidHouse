@@ -1,4 +1,4 @@
-package com.fwc.library.dialog.widget;
+package com.fwc.library.widget;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -12,25 +12,25 @@ import android.widget.TextView;
  *
  */
 @SuppressLint("AppCompatCustomView")
-public class FontTextView extends TextView {
+public class FontBoldTextView extends TextView {
 	private static Typeface yuanti;
 	public static Typeface getYuanti(Context context) {
 		if(yuanti == null){
 //			yuanti = Typeface.createFromAsset(context.getResources().getAssets(), "Yuanti.ttf");
-			yuanti = Typeface.createFromAsset(context.getResources().getAssets(), "fonts/Lantinghei_s.ttf");
+			yuanti = Typeface.createFromAsset(context.getResources().getAssets(), "fonts/Lantinghei_b.ttf");
 		}
 		return yuanti;
 	}
 
-	public FontTextView(Context context) {
+	public FontBoldTextView(Context context) {
 		this(context, null);
 	}
 
-	public FontTextView(Context context, AttributeSet attrs) {
+	public FontBoldTextView(Context context, AttributeSet attrs) {
 		this(context, attrs, 0);
 	}
 
-	public FontTextView(Context context, AttributeSet attrs, int defStyle) {
+	public FontBoldTextView(Context context, AttributeSet attrs, int defStyle) {
 		super(context, attrs, defStyle);
 		this.setTypeface(getYuanti(context));
 	}

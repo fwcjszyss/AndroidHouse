@@ -1,4 +1,4 @@
-package com.fwc.library.dialog.utils;
+package com.fwc.library.utils;
 
 import android.content.Context;
 import android.content.res.AssetManager;
