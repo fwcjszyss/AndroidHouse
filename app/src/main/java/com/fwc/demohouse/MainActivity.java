@@ -333,7 +333,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     /**
      * 时间选择器  dialog 模式
      */
-    private void initTimePicker() {//Dialog 模式下，在底部弹出
+    private void initTimePicker() {
+        //Dialog 模式下，在底部弹出
 
         pvTime = new TimePickerBuilder(this, new OnTimeSelectListener() {
             @Override
@@ -343,8 +344,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Log.i("pvTime", "onTimeSelect");
 
             }
-        })
-                .setTimeSelectChangeListener(new OnTimeSelectChangeListener() {
+        }).setTimeSelectChangeListener(new OnTimeSelectChangeListener() {
                     @Override
                     public void onTimeSelectChanged(Date date) {
                         Log.i("pvTime", "onTimeSelectChanged");
@@ -352,8 +352,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 })
                 .setType(new boolean[]{true, true, true, true, false, false})
                 .isDialog(true)
-                .isCenterLabel(true)
-                .setOutSideCancelable(false)
+//                .isCenterLabel(true)
+//                .setOutSideCancelable(false)
                 .build();
 
         Dialog mDialog = pvTime.getDialog();
